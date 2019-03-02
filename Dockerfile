@@ -4,7 +4,8 @@ FROM ruby:2.5
 # System dependencies for gems.
 RUN apt-get update && apt-get install -y \
   nodejs \
-  build-essential
+  build-essential\
+  mysql-client
 
 # Add directory where all application code will live and own it by the web user.
 RUN mkdir /app
