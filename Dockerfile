@@ -1,5 +1,5 @@
 # Base image.
-FROM ruby:2.5
+FROM ruby:2.5.3
 
 # System dependencies for gems.
 RUN apt-get update && apt-get install -y \
